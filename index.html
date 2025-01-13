@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中医药材图鉴 - 首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            min-height: 100vh;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .enter-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52,152,219,0.3);
+        }
+
+        .enter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52,152,219,0.4);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .categories {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .categories h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .category-item {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            color: #2c3e50;
+            transition: all 0.3s ease;
+        }
+
+        .category-item:hover {
+            background: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            background: white;
+            margin-top: 60px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>中医药材图鉴</h1>
+            <p>探索传统中医药材的奥秘，了解数百种中药的功效与应用。我们为您提供详细的中药材信息，包括性味、归经、功效、用法用量等，帮助您更好地认识传统中医药的精髓。</p>
+            <a href="chinese_medicine.html" class="enter-btn">进入图鉴</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>丰富的药材信息</h3>
+                <p>收录数十种常用中药材，提供详细的性味归经、功效与作用、用法用量等信息。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>智能搜索</h3>
+                <p>支持按药材名称、拼音、功效、性味等多维度搜索，快速找到所需信息。</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>分类筛选</h3>
+                <p>提供多种分类方式，包括补气类、补血类、清热类等，方便按需查找。</p>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>药材分类</h2>
+            <div class="category-grid">
+                <div class="category-item">补气类</div>
+                <div class="category-item">补血类</div>
+                <div class="category-item">清热类</div>
+                <div class="category-item">理气类</div>
+                <div class="category-item">安神类</div>
+                <div class="category-item">活血类</div>
+                <div class="category-item">利水类</div>
+                <div class="category-item">发散类</div>
+                <div class="category-item">化痰类</div>
+                <div class="category-item">平肝类</div>
+                <div class="category-item">养阴类</div>
+                <div class="category-item">收涩类</div>
+                <div class="category-item">补阳类</div>
+                <div class="category-item">解表类</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>中医药材图鉴 © 2024 - 传承千年中医智慧</p>
+        </footer>
+    </div>
+</body>
+</html> 
