@@ -161,6 +161,27 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .main-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .main-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: linear-gradient(145deg, #2ecc71, #27ae60);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .main-button:hover {
+            transform: translateY(-3px);
+        }
     </style>
 </head>
 <body>
@@ -168,7 +189,10 @@
         <section class="hero">
             <h1>中医药材图鉴</h1>
             <p>探索传统中医药材的奥秘，了解数百种中药的功效与应用。我们为您提供详细的中药材信息，包括性味、归经、功效、用法用量等，帮助您更好地认识传统中医药的精髓。</p>
-            <a href="chinese_medicine.html" class="enter-btn">进入图鉴</a>
+            <div class="main-buttons">
+                <a href="chinese_medicine.html" class="main-button">进入药材目录</a>
+                <a href="famous_doctors.html" class="main-button">联系名医</a>
+            </div>
         </section>
 
         <section class="features">
